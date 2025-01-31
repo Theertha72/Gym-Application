@@ -1,0 +1,85 @@
+.plans-container {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1579758629938-03607ccdbaba?w=1200&auto=format') center/cover no-repeat;
+  padding: 3rem 1rem;
+}
+
+.plans-title {
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.plan-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.plan-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.plan-price {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.plan-features li {
+  margin: 1rem 0;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .plans-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .plans-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .plans-title {
+    font-size: 2rem;
+  }
+
+  .plan-card {
+    padding: 1.5rem;
+  }
+}
